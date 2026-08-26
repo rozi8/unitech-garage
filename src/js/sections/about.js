@@ -20,7 +20,7 @@ export function renderAbout(el) {
 
         <div data-animate="fade-up">
           <span class="eyebrow">${eyebrow}</span>
-          <h2 class="mt-4 text-balanced text-3xl font-black leading-tight text-ink-primary sm:text-5xl">
+          <h2 class="mt-4 text-balanced font-heading text-3xl font-black leading-tight text-ink-primary sm:text-5xl">
             ${titleTop}<br />
             <span class="text-gradient-logo">${titleBottom}</span>
           </h2>

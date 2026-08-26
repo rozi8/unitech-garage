@@ -10,7 +10,7 @@ export function renderContact(el) {
         <div class="grid grid-cols-1 gap-8 p-6 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center lg:p-12" data-animate="fade-up">
           <div>
             <span class="eyebrow">${eyebrow}</span>
-            <h2 class="mt-4 max-w-3xl text-balanced text-3xl font-black leading-tight sm:text-5xl">${title}</h2>
+            <h2 class="mt-4 max-w-3xl text-balanced font-heading text-3xl font-black leading-tight sm:text-5xl">${title}</h2>
             <p class="mt-4 max-w-2xl text-base leading-8 text-blue-50/80">${subtitle}</p>
           </div>
           <a href="${waLink}" target="_blank" rel="noopener" class="button-primary whitespace-nowrap">

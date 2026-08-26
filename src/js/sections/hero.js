@@ -5,7 +5,7 @@ export function renderHero(el) {
 
   const statsMarkup = stats.map(item => `
     <div class="rounded-md bg-white/10 p-4">
-      <div class="text-2xl font-black text-white">${item.value}</div>
+      <div class="text-2xl font-heading font-black text-white">${item.value}</div>
       <div class="mt-1 text-xs font-semibold leading-5 text-blue-50/75">${item.label}</div>
     </div>
   `).join('')
@@ -20,7 +20,7 @@ export function renderHero(el) {
       <div class="container-main relative grid grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14 lg:py-24">
         <div class="max-w-2xl" data-animate="fade-up">
           <span class="eyebrow">${eyebrow}</span>
-          <h1 data-animate-hero class="mt-5 text-balanced text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-[72px]">
+          <h1 data-animate-hero class="mt-5 text-balanced font-heading text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-[72px]">
             ${headlineTop.split(' ').map(w => `<span class="chars inline-block">${w}&nbsp;</span>`).join('')}
           </h1>
           <p class="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-blue-50 sm:text-xl">${headlineBottom}</p>

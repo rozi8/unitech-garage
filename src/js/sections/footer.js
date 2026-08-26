@@ -14,18 +14,18 @@ export function renderFooter(el) {
           <div class="flex items-center gap-3">
             <img src="/img/logo.jpeg" alt="Unitech Garage" class="h-12 w-12 rounded-md bg-white object-contain p-1" />
             <div>
-              <div class="text-lg font-black">Unitech Garage</div>
+              <div class="text-lg font-heading font-black">Unitech Garage</div>
               <div class="text-xs font-semibold text-blue-50/60">Professional Auto Service</div>
             </div>
           </div>
           <p class="mt-5 max-w-sm text-sm leading-7 text-blue-50/70">${tagline}</p>
         </div>
         <div>
-          <h4 class="text-sm font-black text-white">Navigasi</h4>
+          <h4 class="text-sm font-heading font-black text-white">Navigasi</h4>
           <ul class="mt-4 space-y-3">${navLinks}</ul>
         </div>
         <div>
-          <h4 class="text-sm font-black text-white">Kontak</h4>
+          <h4 class="text-sm font-heading font-black text-white">Kontak</h4>
           <p class="mt-4 text-sm leading-7 text-blue-50/70">${address}</p>
           <p class="mt-2 text-sm leading-7 text-blue-50/70">WhatsApp: ${whatsappDisplay}</p>
         </div>

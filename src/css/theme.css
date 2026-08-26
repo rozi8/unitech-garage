@@ -39,8 +39,12 @@
     @apply max-w-7xl mx-auto;
   }
 
+  .font-heading {
+    font-family: Barlow, Inter, system-ui, -apple-system, sans-serif;
+  }
+
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[11px] sm:text-xs font-black uppercase text-brand-orange;
+    @apply inline-flex items-center gap-2 text-[11px] sm:text-xs font-heading font-black uppercase text-brand-orange;
     letter-spacing: 0.14em;
   }
 

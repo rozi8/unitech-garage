@@ -17,12 +17,12 @@ export function renderGallery(el) {
             </svg>
           </span>
         </button>
-        <div class="ba-label absolute left-3 top-3 rounded-md bg-brand-navy/90 px-3 py-2 text-[10px] font-black uppercase text-white sm:text-xs">SEBELUM (BEFORE)</div>
-        <div class="ba-label absolute right-3 top-3 rounded-md bg-brand-orange px-3 py-2 text-[10px] font-black uppercase text-white sm:text-xs">SETELAH (SESUDAH)</div>
+        <div class="ba-label absolute left-3 top-3 rounded-md bg-brand-navy/90 px-3 py-2 text-[10px] font-heading font-black uppercase text-white sm:text-xs">SEBELUM (BEFORE)</div>
+        <div class="ba-label absolute right-3 top-3 rounded-md bg-brand-orange px-3 py-2 text-[10px] font-heading font-black uppercase text-white sm:text-xs">SETELAH (SESUDAH)</div>
       </div>
       <div class="p-6">
-        <div class="text-xs font-black text-brand-blue">Layanan 0${i + 1}</div>
-        <h3 class="mt-2 text-xl font-black text-ink-primary">${item.title}</h3>
+        <div class="text-xs font-heading font-black text-brand-blue">Layanan 0${i + 1}</div>
+        <h3 class="mt-2 text-xl font-heading font-black text-ink-primary">${item.title}</h3>
         <p class="mt-3 text-sm leading-6 text-ink-secondary">${item.desc}</p>
       </div>
     </article>
@@ -33,7 +33,7 @@ export function renderGallery(el) {
       <div class="container-main">
         <div class="mx-auto max-w-3xl text-center" data-animate="fade-up">
           <span class="eyebrow justify-center">${eyebrow}</span>
-          <h2 class="mt-4 text-balanced text-3xl font-black leading-tight text-ink-primary sm:text-5xl">${title}</h2>
+          <h2 class="mt-4 text-balanced font-heading text-3xl font-black leading-tight text-ink-primary sm:text-5xl">${title}</h2>
           <p class="mt-4 text-base leading-8 text-ink-secondary">${subtitle}</p>
         </div>
 

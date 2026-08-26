@@ -2,11 +2,11 @@ import { siteContent } from '../data/content.js'
 
 export function renderHeader(el) {
   const links = siteContent.nav.map(n =>
-    `<a href="${n.href}" class="rounded-md px-3 py-2 text-sm font-bold text-ink-secondary transition-colors hover:bg-surface-base hover:text-brand-blue">${n.label}</a>`
+    `<a href="${n.href}" class="rounded-md px-3 py-2 text-sm font-bold text-ink-secondary transition-colors hover:bg-surface-base hover:text-brand-orange">${n.label}</a>`
   ).join('')
 
   const mobileLinks = siteContent.nav.map(n =>
-    `<a href="${n.href}" onclick="toggleMobileMenu()" class="block rounded-md px-3 py-3 text-sm font-bold text-ink-primary transition-colors hover:bg-surface-base hover:text-brand-blue">${n.label}</a>`
+    `<a href="${n.href}" onclick="toggleMobileMenu()" class="block rounded-md px-3 py-3 text-sm font-bold text-ink-primary transition-colors hover:bg-surface-base hover:text-brand-orange">${n.label}</a>`
   ).join('')
 
   el.innerHTML = `
@@ -15,7 +15,7 @@ export function renderHeader(el) {
         <a href="#hero" class="flex min-w-0 items-center gap-3" aria-label="Unitech Garage">
           <img src="/img/logo.jpeg" alt="Unitech Garage" class="h-12 w-12 rounded-md border border-line bg-white object-contain p-1" />
           <div class="min-w-0">
-            <div class="text-base font-black leading-tight text-ink-primary">Unitech Garage</div>
+            <div class="text-base font-heading font-black leading-tight text-ink-primary">Unitech Garage</div>
             <div class="hidden text-xs font-semibold text-ink-secondary sm:block">Professional Auto Service</div>
           </div>
         </a>

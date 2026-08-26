@@ -11,7 +11,7 @@ export function renderServices(el) {
         <span class="absolute right-4 top-4 h-2 w-2 rounded-full bg-brand-orange"></span>
       </div>
       <div class="p-6">
-        <h3 class="text-xl font-black text-ink-primary">${s.title}</h3>
+        <h3 class="text-xl font-heading font-black text-ink-primary">${s.title}</h3>
         <p class="mt-3 text-sm leading-6 text-ink-secondary">${s.desc}</p>
       </div>
     </article>
@@ -23,7 +23,7 @@ export function renderServices(el) {
         <div class="grid grid-cols-1 gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div data-animate="fade-up">
             <span class="eyebrow">${eyebrow}</span>
-            <h2 class="mt-4 text-balanced text-3xl font-black leading-tight text-ink-primary sm:text-5xl">${title}</h2>
+            <h2 class="mt-4 text-balanced font-heading text-3xl font-black leading-tight text-ink-primary sm:text-5xl">${title}</h2>
           </div>
           <p class="max-w-2xl text-base leading-8 text-ink-secondary lg:justify-self-end" data-animate="fade-up">${subtitle}</p>
         </div>
