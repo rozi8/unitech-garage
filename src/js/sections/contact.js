@@ -9,16 +9,16 @@ export function renderContact(el) {
       <div class="container-main">
         <div class="relative w-full rounded-[28px] sm:rounded-[36px] overflow-hidden bg-white border border-slate-200/80 p-6 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/40" data-animate="fade-up">
           
-          <!-- Soft Orange Glows (Pojok Kanan & Full Width Bottom sebatas bawah button) -->
-          <div class="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-orange-400/20 blur-3xl"></div>
-          <div class="pointer-events-none absolute bottom-0 inset-x-0 h-28 sm:h-32 bg-gradient-to-t from-orange-100/80 via-orange-50/40 to-transparent"></div>
+          <!-- Blue Glows (Pojok Kanan & Full Width Bottom sebatas bawah button) -->
+          <div class="pointer-events-none absolute -right-12 -top-12 h-64 w-64 rounded-full bg-brand-blue/18 blur-3xl"></div>
+          <div class="pointer-events-none absolute bottom-0 inset-x-0 h-32 sm:h-36 bg-gradient-to-t from-brand-blue/25 via-brand-blue/10 via-50% to-transparent"></div>
           
           <div class="relative z-10 grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_400px] lg:items-center">
             
             <!-- Left Text & CTA Content -->
             <div>
               <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-heading font-black tracking-tight leading-[1.15] text-slate-900">
-                Siap Merawat Mobil <span class="text-brand-orange">Tetap Prima?</span>
+                Siap Merawat Mobil <span class="text-brand-blue">Tetap Prima?</span>
               </h2>
 
               <p class="mt-3 text-sm sm:text-base font-normal leading-relaxed text-slate-600 max-w-xl">
