@@ -6,7 +6,7 @@ export function renderHeader(el) {
   ).join('')
 
   const mobileLinks = siteContent.nav.map(n =>
-    `<a href="${n.href}" onclick="toggleMobileMenu()" class="block rounded-md px-3 py-3 text-sm font-bold text-ink-primary transition-colors hover:bg-surface-base hover:text-brand-orange">${n.label}</a>`
+    `<a href="${n.href}" class="mobile-nav-link block rounded-md px-3 py-3 text-sm font-bold text-ink-primary transition-colors hover:bg-surface-base hover:text-brand-orange">${n.label}</a>`
   ).join('')
 
   el.innerHTML = `
@@ -36,27 +36,48 @@ export function renderHeader(el) {
       <div id="mobile-menu" class="max-h-0 overflow-hidden border-t border-line bg-white px-4 opacity-0 transition-all duration-300 md:hidden">
         <div class="space-y-1 py-3">
           ${mobileLinks}
-          <a href="#contact" onclick="toggleMobileMenu()" class="button-primary mt-2 w-full text-sm">Booking via WhatsApp</a>
+          <a href="#contact" class="mobile-nav-link button-primary mt-2 w-full text-sm">Booking via WhatsApp</a>
         </div>
       </div>
     </header>
     <div class="h-20"></div>
   `
 
-  window.toggleMobileMenu = function () {
-    const btn = document.getElementById('mobile-menu-toggle')
-    const menu = document.getElementById('mobile-menu')
-    const isOpen = menu.classList.contains('opacity-100')
+  const menu = el.querySelector('#mobile-menu')
+  const toggleBtn = el.querySelector('#mobile-menu-toggle')
+
+  function toggleMenu() {
+    if (!menu || !toggleBtn) return
+    const isOpen = menu.classList.contains('is-open')
 
     if (isOpen) {
-      menu.classList.remove('opacity-100')
+      menu.classList.remove('is-open', 'opacity-100')
       menu.style.maxHeight = '0px'
-      btn.setAttribute('aria-expanded', 'false')
-      return
+      toggleBtn.setAttribute('aria-expanded', 'false')
+    } else {
+      menu.classList.add('is-open', 'opacity-100')
+      menu.style.maxHeight = `${menu.scrollHeight || 350}px`
+      toggleBtn.setAttribute('aria-expanded', 'true')
     }
-
-    menu.classList.add('opacity-100')
-    menu.style.maxHeight = `${menu.scrollHeight}px`
-    btn.setAttribute('aria-expanded', 'true')
   }
+
+  // Global function for safety
+  window.toggleMobileMenu = toggleMenu
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation()
+      toggleMenu()
+    })
+  }
+
+  // Close mobile menu when a mobile link is clicked
+  const mobileNavLinks = el.querySelectorAll('.mobile-nav-link')
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (menu && menu.classList.contains('is-open')) {
+        toggleMenu()
+      }
+    })
+  })
 }

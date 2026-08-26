@@ -44,13 +44,8 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[11px] sm:text-xs font-heading font-black uppercase text-brand-orange;
-    letter-spacing: 0.14em;
-  }
-
-  .eyebrow::before {
-    content: "";
-    @apply block h-0.5 w-8 rounded-full bg-brand-orange;
+    font-family: 'North Djakarta', 'Barlow', cursive, sans-serif;
+    @apply inline-flex items-center text-sm sm:text-base font-normal tracking-wide text-brand-orange;
   }
 
   .button-primary {
@@ -58,7 +53,7 @@
   }
 
   .button-primary:hover {
-    @apply -translate-y-0.5 bg-brand-red shadow-red-500/20;
+    @apply -translate-y-0.5 bg-slate-900 text-white shadow-slate-900/30;
   }
 
   .button-secondary {

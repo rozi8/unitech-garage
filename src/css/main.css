@@ -26,6 +26,14 @@
   ::selection { background: rgba(244, 123, 32, 0.25); }
 }
 
+@font-face {
+  font-family: 'North Djakarta';
+  src: local('North Djakarta'), local('NorthDjakarta-Regular'), local('North Djakarta Regular'), url('/fonts/NorthDjakarta-Regular.ttf') format('truetype'), url('/fonts/NorthDjakarta.ttf') format('truetype'), url('/fonts/NorthDjakarta.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer components {
   .section { @apply w-full px-4 sm:px-6 py-16 sm:py-20 lg:py-24; }
   .container-main { @apply max-w-7xl mx-auto; }
@@ -35,15 +43,14 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[11px] sm:text-xs font-heading font-black uppercase text-brand-orange;
-    letter-spacing: 0.14em;
+    font-family: 'North Djakarta', 'Barlow', cursive, sans-serif;
+    @apply inline-flex items-center text-sm sm:text-lg font-normal tracking-wide text-brand-orange;
   }
-  .eyebrow::before { content: ""; @apply block h-0.5 w-8 rounded-full bg-brand-orange; }
 
   .button-primary {
     @apply inline-flex items-center justify-center rounded-md bg-brand-orange px-5 py-3 text-sm font-black text-white shadow-lg shadow-orange-500/20 transition-all duration-200;
   }
-  .button-primary:hover { @apply -translate-y-0.5 bg-brand-red shadow-red-500/20; }
+  .button-primary:hover { @apply -translate-y-0.5 bg-slate-900 text-white shadow-slate-900/30; }
 
   .button-secondary {
     @apply inline-flex items-center justify-center rounded-md border border-line bg-white px-5 py-3 text-sm font-bold text-ink-primary transition-all duration-200;

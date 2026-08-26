@@ -28,7 +28,8 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Barlow', 'Inter', 'system-ui', 'sans-serif']
+        heading: ['Barlow', 'Inter', 'system-ui', 'sans-serif'],
+        badge: ['"North Djakarta"', 'Barlow', 'sans-serif']
       }
     }
   },
