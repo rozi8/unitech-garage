@@ -140,7 +140,17 @@ export const siteContent = {
     eyebrow: 'Lokasi',
     title: 'Datang langsung atau booking dulu lewat WhatsApp',
     address: 'Unitech Garage, Depok, Jawa Barat',
-    mapsEmbedUrl: 'https://www.google.com/maps/embed?pb=REPLACE_WITH_REAL_EMBED_LINK'
+    mapsEmbedUrl: 'https://maps.google.com/maps?q=Depok%2C%20Jawa%20Barat&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    cards: [
+      {
+        title: 'Konsultasi dulu',
+        desc: 'Cocok untuk keluhan yang perlu dipetakan sebelum datang.'
+      },
+      {
+        title: 'Datang ke bengkel',
+        desc: 'Bawa mobil untuk pengecekan langsung oleh teknisi.'
+      }
+    ]
   },
 
   contact: {
