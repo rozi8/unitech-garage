@@ -4,10 +4,10 @@ export function renderServices(el) {
   const { eyebrow, title, subtitle, items } = siteContent.services
 
   const cards = items.map((s, i) => `
-    <article class="group relative flex flex-col justify-between w-full bg-white rounded-[32px] p-3.5 sm:p-4 pb-6 border border-slate-200/80 shadow-xl shadow-slate-200/40 hover:shadow-2xl hover:shadow-slate-300/50 hover:-translate-y-1.5 transition-all duration-300" data-animate="fade-up">
+    <article class="group relative flex flex-col justify-between w-full bg-white rounded-[28px] sm:rounded-[32px] overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/40 hover:shadow-2xl hover:shadow-slate-300/50 hover:-translate-y-1.5 transition-all duration-300" data-animate="fade-up">
       <div>
-        <!-- Hero Image Section (Landscape 16:10) -->
-        <div class="relative w-full aspect-[16/10] rounded-[22px] overflow-hidden bg-slate-100">
+        <!-- Hero Image Section (Full Bleed Top, Left, Right) -->
+        <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100">
           <img 
             src="${s.image}" 
             alt="${s.title}" 
@@ -20,7 +20,7 @@ export function renderServices(el) {
         </div>
 
         <!-- Content Section -->
-        <div class="px-3 pt-5">
+        <div class="px-5 pt-5 sm:px-6">
           <h3 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">
             ${s.title}
           </h3>
@@ -32,7 +32,7 @@ export function renderServices(el) {
       </div>
 
       <!-- Action Button Row (Full Width CTA) -->
-      <div class="px-3 pt-6">
+      <div class="px-5 pt-6 pb-6 sm:px-6">
         <a 
           href="#contact"
           class="w-full bg-slate-900 hover:bg-brand-orange active:scale-[0.98] text-white font-semibold text-sm py-3.5 px-5 rounded-full text-center transition-all duration-200 cursor-pointer shadow-md hover:shadow-lg hover:shadow-orange-500/25 flex items-center justify-center gap-2 group/btn">
@@ -48,15 +48,13 @@ export function renderServices(el) {
   el.innerHTML = `
     <section id="services-section" class="section bg-surface-base">
       <div class="container-main">
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
-          <div data-animate="fade-up">
-            <span class="eyebrow">${eyebrow}</span>
-            <h2 class="mt-4 text-balanced font-heading text-3xl font-black leading-tight text-ink-primary sm:text-5xl">${title}</h2>
-          </div>
-          <p class="max-w-2xl text-base leading-8 text-ink-secondary lg:justify-self-end" data-animate="fade-up">${subtitle}</p>
+        <div class="mx-auto max-w-3xl text-center" data-animate="fade-up">
+          <span class="eyebrow justify-center">${eyebrow}</span>
+          <h2 class="mt-3 text-balanced font-heading text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">${title}</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg max-w-2xl mx-auto">${subtitle}</p>
         </div>
 
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           ${cards}
         </div>
       </div>

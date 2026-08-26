@@ -20,13 +20,11 @@ export function renderWhyUs(el) {
   el.innerHTML = `
     <section class="section bg-surface-dark text-white">
       <div class="container-main">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
-          <div data-animate="fade-up">
-            <span class="eyebrow">${eyebrow}</span>
-            <h2 class="mt-4 text-balanced font-heading text-3xl font-black leading-tight text-white sm:text-5xl">${title}</h2>
-          </div>
-          <p class="max-w-2xl text-base leading-8 text-blue-50/75 lg:justify-self-end" data-animate="fade-up">
-            Karakter visual navy dan biru memberi rasa andal, sementara aksen orange-merah menjaga energi otomotif tetap terasa aktif.
+        <div class="mx-auto max-w-3xl text-center" data-animate="fade-up">
+          <span class="eyebrow justify-center">${eyebrow}</span>
+          <h2 class="mt-3 text-balanced font-heading text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">${title}</h2>
+          <p class="mt-4 text-base leading-relaxed text-blue-50/75 max-w-2xl mx-auto" data-animate="fade-up">
+            Karakter visual navy dan biru memberi rasa andal, sementara aksen orange menjaga energi otomotif tetap terasa aktif.
           </p>
         </div>
 
