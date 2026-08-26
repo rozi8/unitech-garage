@@ -2,21 +2,21 @@ import { siteContent } from '../data/content.js'
 
 export function renderHeader(el) {
   const links = siteContent.nav.map(n =>
-    `<a href="${n.href}" class="rounded-md px-3 py-2 text-sm font-bold text-ink-secondary transition-colors hover:bg-surface-base hover:text-brand-orange">${n.label}</a>`
+    `<a href="${n.href}" class="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100/80 hover:text-brand-orange">${n.label}</a>`
   ).join('')
 
   const mobileLinks = siteContent.nav.map(n =>
-    `<a href="${n.href}" class="mobile-nav-link block rounded-md px-3 py-3 text-sm font-bold text-ink-primary transition-colors hover:bg-surface-base hover:text-brand-orange">${n.label}</a>`
+    `<a href="${n.href}" class="mobile-nav-link block rounded-lg px-3 py-3 text-sm font-medium text-slate-800 transition-colors hover:bg-slate-100 hover:text-brand-orange">${n.label}</a>`
   ).join('')
 
   el.innerHTML = `
-    <header class="fixed left-0 right-0 top-0 z-50 border-b border-line bg-white/95 backdrop-blur-xl">
+    <header class="fixed left-0 right-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
       <div class="container-main flex h-20 items-center justify-between px-4 sm:px-6">
-        <a href="#hero" class="flex min-w-0 items-center gap-3" aria-label="Unitech Garage">
-          <img src="/img/logo.jpeg" alt="Unitech Garage" class="h-12 w-12 rounded-md border border-line bg-white object-contain p-1" />
+        <a href="#hero" class="flex min-w-0 items-center gap-3 group" aria-label="Unitech Garage">
+          <img src="/img/logo.jpeg" alt="Unitech Garage" class="h-11 sm:h-12 w-auto object-contain rounded-lg bg-white p-0.5 border border-slate-200/60 shadow-sm shrink-0 group-hover:scale-105 transition-transform" />
           <div class="min-w-0">
-            <div class="text-base font-heading font-black leading-tight text-ink-primary">Unitech Garage</div>
-            <div class="hidden text-xs font-semibold text-ink-secondary sm:block">Professional Auto Service</div>
+            <div class="text-base sm:text-lg font-heading font-bold tracking-tight text-slate-900 leading-tight">Unitech Garage</div>
+            <div class="hidden text-xs font-normal text-slate-500 sm:block">Professional Auto Service</div>
           </div>
         </a>
 

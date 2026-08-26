@@ -28,10 +28,25 @@ export const siteContent = {
     titleTop: 'Profesional saat mendiagnosis.',
     titleBottom: 'Antusias saat mengeksekusi.',
     body: 'Unitech Garage dibangun untuk pemilik mobil yang ingin proses servis terasa tenang: keluhan didengar, temuan dijelaskan, dan pengerjaan dilakukan dengan standar yang konsisten.',
-    points: [
-      'Alur kerja jelas dari inspeksi, estimasi, pengerjaan, hingga pengecekan akhir',
-      'Komunikasi lugas agar pelanggan tahu prioritas perbaikan',
-      'Visual bengkel modern dengan energi otomotif yang kuat'
+    image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1000&auto=format&fit=crop',
+    rating: '99% Pelanggan Puas',
+    ratingDetail: '4.9 ★★★★★ (120+ Review)',
+    features: [
+      {
+        title: 'Teknisi Berpengalaman',
+        desc: 'Inspeksi & diagnosis akurat dari tim ahli yang paham detail teknis kendaraan.',
+        color: 'orange'
+      },
+      {
+        title: 'Peralatan & Tools Modern',
+        desc: 'Penggunaan perlengkapan scanner & tools presisi untuk hasil mulus tahan lama.',
+        color: 'blue'
+      },
+      {
+        title: 'Servis Terpercaya & Garansi',
+        desc: 'Penjelasan estimasi biaya transparan dengan jaminan garansi resmi pengerjaan.',
+        color: 'emerald'
+      }
     ]
   },
 

@@ -95,7 +95,7 @@ function setupSlider(container) {
     if (e.key === 'ArrowRight') setPos(targetPos + 5, true)
   })
 
-  container.style.touchAction = 'none'
+  container.style.touchAction = 'pan-y'
   container.style.userSelect = 'none'
 
   setPos(96, false)

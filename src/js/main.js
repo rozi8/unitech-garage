@@ -1,6 +1,3 @@
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 import { renderHeader } from './sections/header.js'
 import { renderHero } from './sections/hero.js'
 import { renderAbout } from './sections/about.js'
@@ -12,8 +9,6 @@ import { renderContact } from './sections/contact.js'
 import { renderFooter } from './sections/footer.js'
 import { initScrollAnimations } from './animations.js'
 import initBeforeAfter from './beforeAfter.js'
-
-gsap.registerPlugin(ScrollTrigger)
 
 renderHeader(document.getElementById('site-header'))
 renderHero(document.getElementById('hero'))
@@ -27,5 +22,7 @@ renderFooter(document.getElementById('site-footer'))
 
 // Initialize UI animations and before/after sliders
 initScrollAnimations()
-// ensure sliders are initialized after DOM rendered
-requestAnimationFrame(() => initBeforeAfter(document))
+// ensure sliders are initialized after DOM render
+requestAnimationFrame(() => {
+  initBeforeAfter(document)
+})
