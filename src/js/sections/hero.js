@@ -1,14 +1,7 @@
 import { siteContent } from '../data/content.js'
 
 export function renderHero(el) {
-  const { eyebrow, headlineTop, headlineBottom, subheadline, ctaPrimary, ctaSecondary, stats } = siteContent.hero
-
-  const statsMarkup = stats.map(item => `
-    <div class="rounded-md bg-white/10 p-4">
-      <div class="text-2xl font-heading font-black text-white">${item.value}</div>
-      <div class="mt-1 text-xs font-semibold leading-5 text-blue-50/75">${item.label}</div>
-    </div>
-  `).join('')
+  const { eyebrow, headlineTop, headlineBottom, subheadline, ctaPrimary, ctaSecondary } = siteContent.hero
 
   el.innerHTML = `
     <section class="relative overflow-hidden bg-surface-dark text-white">
@@ -34,9 +27,6 @@ export function renderHero(el) {
         <div class="panel-glow rounded-lg border border-white/15 bg-white/10 p-3 backdrop-blur-md sm:p-4 lg:justify-self-end" data-animate="fade-up">
           <div class="overflow-hidden rounded-md">
             <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1400&auto=format&fit=crop" alt="Teknisi Unitech Garage menangani mobil" class="h-[300px] w-full object-cover sm:h-[420px] lg:h-[500px] lg:w-[620px]" />
-          </div>
-          <div class="mt-3 grid grid-cols-3 gap-3">
-            ${statsMarkup}
           </div>
         </div>
       </div>

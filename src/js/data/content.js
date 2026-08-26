@@ -15,11 +15,6 @@ export const siteContent = {
     subheadline: 'Dari servis mesin, kelistrikan, kaki-kaki, AC, sampai detailing ringan. Setiap pekerjaan dimulai dari diagnosis, estimasi transparan, lalu eksekusi yang presisi.',
     ctaPrimary: 'Booking via WhatsApp',
     ctaSecondary: 'Lihat Layanan',
-    stats: [
-      { value: '6+', label: 'Kategori layanan' },
-      { value: '4', label: 'Tahap kontrol kerja' },
-      { value: '1:1', label: 'Konsultasi teknisi' }
-    ],
     marquee: [
       'DIAGNOSIS JELAS',
       'TEKNISI BERPENGALAMAN',
