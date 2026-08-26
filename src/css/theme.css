@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --navy: #07162d;
+    --blue: #2464b4;
+    --orange: #f47b20;
+    --red: #d83a2e;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-base text-ink-primary antialiased;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ::selection {
+    background: rgba(244, 123, 32, 0.25);
+  }
+}
+
+@layer components {
+  .section {
+    @apply w-full px-4 sm:px-6 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-main {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] sm:text-xs font-black uppercase text-brand-orange;
+    letter-spacing: 0.14em;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply block h-0.5 w-8 rounded-full bg-brand-orange;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand-orange px-5 py-3 text-sm font-black text-white shadow-lg shadow-orange-500/20 transition-all duration-200;
+  }
+
+  .button-primary:hover {
+    @apply -translate-y-0.5 bg-brand-red shadow-red-500/20;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-line bg-white px-5 py-3 text-sm font-bold text-ink-primary transition-all duration-200;
+  }
+
+  .button-secondary:hover {
+    @apply -translate-y-0.5 border-brand-blue text-brand-blue shadow-md;
+  }
+
+  .service-card {
+    @apply rounded-lg border border-line bg-white p-6 shadow-sm transition-all duration-200;
+  }
+
+  .service-card:hover {
+    @apply -translate-y-1 border-brand-blue shadow-xl shadow-blue-900/10;
+  }
+
+  .before-after {
+    aspect-ratio: 4 / 3;
+    touch-action: none;
+    cursor: ew-resize;
+    background: #0a1324;
+  }
+
+  .before-after img {
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .ba-before {
+    z-index: 2;
+    width: 50%;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .ba-after {
+    z-index: 1;
+  }
+
+  .ba-divider,
+  .ba-handle,
+  .ba-label {
+    z-index: 3;
+  }
+
+  .ba-handle {
+    touch-action: none;
+  }
+
+}
+
+@layer utilities {
+  .text-balanced {
+    text-wrap: balance;
+  }
+
+  .text-gradient-logo {
+    background: linear-gradient(90deg, var(--blue), var(--orange), var(--red));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .panel-glow {
+    box-shadow: 0 24px 80px rgba(7, 22, 45, 0.14);
+  }
+}
