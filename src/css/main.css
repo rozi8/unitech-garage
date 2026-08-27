@@ -124,6 +124,39 @@
   transform: translateY(0);
 }
 
+.mobile-card-reveal > article {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
+}
+
+.mobile-card-reveal.is-visible > article {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 767px) {
+  .mobile-card-reveal > article {
+    transform: translate3d(calc(-100vw - 2rem), 0, 0);
+    will-change: transform, opacity;
+  }
+
+  .mobile-card-reveal.is-visible > article {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-card-reveal > article {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Hero */
 .hero-shell {
   position: relative;

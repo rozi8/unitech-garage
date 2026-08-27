@@ -5,7 +5,8 @@ export function renderGallery(el) {
   const { title, subtitle, items } = siteContent.comparisons
 
   const cards = items.map((item, i) => `
-    <article class="group relative flex flex-col justify-between w-full bg-white rounded-[28px] sm:rounded-[32px] overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/40 hover:shadow-2xl hover:shadow-slate-300/50 hover:-translate-y-1.5 transition-all duration-300" data-animate="fade-up">
+    <div class="mobile-card-reveal min-w-0 h-full" data-animate="slide-left-mobile">
+    <article class="group relative flex h-full flex-col justify-between w-full bg-white rounded-[28px] sm:rounded-[32px] overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/40 hover:shadow-2xl hover:shadow-slate-300/50 hover:-translate-y-1.5 transition-all duration-300">
       <div>
         <!-- Before/After Slider Container (Full Bleed Top, Left, Right) -->
         <div class="before-after relative w-full h-[250px] sm:h-[290px] overflow-hidden select-none touch-none cursor-ew-resize bg-slate-100">
@@ -42,6 +43,7 @@ export function renderGallery(el) {
         </a>
       </div>
     </article>
+    </div>
   `).join('')
 
   el.innerHTML = `

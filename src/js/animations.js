@@ -1,6 +1,6 @@
 export function initScrollAnimations() {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  const items = document.querySelectorAll('[data-animate="fade-up"]')
+  const items = document.querySelectorAll('[data-animate]')
 
   if (!items.length) return
 
@@ -19,22 +19,18 @@ export function initScrollAnimations() {
       })
     },
     {
-      threshold: 0.05,
-      rootMargin: '0px 0px 50px 0px'
+      threshold: 0.12,
+      rootMargin: '0px 0px -4% 0px'
     }
   )
 
   items.forEach((item) => {
     const rect = item.getBoundingClientRect()
-    if (rect.top < window.innerHeight) {
+
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
       item.classList.add('is-visible')
     } else {
       observer.observe(item)
     }
   })
-
-  // Safety fallback reveal
-  setTimeout(() => {
-    items.forEach((el) => el.classList.add('is-visible'))
-  }, 1200)
 }

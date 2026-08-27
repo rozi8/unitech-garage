@@ -4,7 +4,8 @@ export function renderServices(el) {
   const { eyebrow, title, subtitle, items } = siteContent.services
 
   const cards = items.map((s, i) => `
-    <article class="group relative flex flex-col justify-between w-full bg-white rounded-[28px] sm:rounded-[32px] overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/40 hover:shadow-2xl hover:shadow-slate-300/50 hover:-translate-y-1.5 transition-all duration-300" data-animate="fade-up">
+    <div class="mobile-card-reveal min-w-0 h-full" data-animate="slide-left-mobile">
+    <article class="group relative flex h-full flex-col justify-between w-full bg-white rounded-[28px] sm:rounded-[32px] overflow-hidden border border-slate-200/80 shadow-xl shadow-slate-200/40 hover:shadow-2xl hover:shadow-slate-300/50 hover:-translate-y-1.5 transition-all duration-300">
       <div>
         <!-- Hero Image Section (Full Bleed Top, Left, Right) -->
         <div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-100">
@@ -43,6 +44,7 @@ export function renderServices(el) {
         </a>
       </div>
     </article>
+    </div>
   `).join('')
 
   el.innerHTML = `
