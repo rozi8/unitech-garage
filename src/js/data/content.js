@@ -9,9 +9,9 @@ export const siteContent = {
   ],
 
   hero: {
-    headline: 'Perawatan mobil yang rapi, jelas, dan bertenaga.',
-    supportingHeadline: 'Dikerjakan teknisi yang paham detail.',
-    subheadline: 'Dari servis mesin, kelistrikan, kaki-kaki, AC, sampai detailing ringan. Setiap pekerjaan dimulai dari diagnosis, estimasi transparan, lalu eksekusi yang presisi.',
+    headline: 'Bengkel Generasi Baru untuk Semua Generasi Mobil.',
+    supportingHeadline: 'Diagnosis akurat, pengerjaan presisi, harga transparan.',
+    subheadline: 'Mau rawat mobil klasik kesayangan, peremajaan matic harian, atau optimasi sistem electric vehicle & hybrid? Kami tangani dari kelistrikan, kaki-kaki, hingga AC dengan transparansi penuh dari awal sampai serah terima kunci..',
     ctaPrimary: 'Booking via WhatsApp',
     ctaSecondary: 'Lihat Layanan',
     phoneNumber: '0812 3456 7890',
@@ -56,7 +56,7 @@ export const siteContent = {
 
   services: {
     eyebrow: 'Layanan Kami',
-    title: 'Solusi utama untuk menjaga mobil tetap siap jalan',
+    title: 'Solusi utama untuk menjaga mobil dalam kondisi prima',
     subtitle: 'Pilih layanan sesuai keluhan. Tim kami bantu cek prioritas supaya biaya dan waktu pengerjaan lebih terkendali.',
     items: [
       {
