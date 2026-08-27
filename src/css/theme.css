@@ -44,6 +44,10 @@
     font-family: Barlow, Inter, system-ui, -apple-system, sans-serif;
   }
 
+  .font-script {
+    font-family: 'Great Vibes', cursive, sans-serif;
+  }
+
   .eyebrow {
     font-family: 'North Djakarta', 'Barlow', cursive, sans-serif;
     @apply inline-flex items-center text-sm sm:text-base font-normal tracking-wide text-brand-orange;
@@ -55,6 +59,10 @@
 
   .button-primary:hover {
     @apply -translate-y-0.5 bg-slate-900 text-white shadow-slate-900/30;
+  }
+
+  .btn-red-hero {
+    @apply inline-flex items-center justify-center rounded bg-[#e50914] px-8 py-3.5 text-base sm:text-lg font-black tracking-wider text-white shadow-xl shadow-red-600/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-red-600/50 active:translate-y-0;
   }
 
   .button-secondary {

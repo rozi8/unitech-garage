@@ -1,34 +1,59 @@
 import { siteContent } from '../data/content.js'
 
 export function renderHero(el) {
-  const { eyebrow, headlineTop, headlineBottom, subheadline, ctaPrimary, ctaSecondary } = siteContent.hero
+  const {
+    headline,
+    supportingHeadline,
+    subheadline,
+    ctaPrimary,
+    ctaSecondary,
+    whatsappNumber,
+    bgImage,
+    carsImage
+  } = siteContent.hero
+
+  const bookingMessage = encodeURIComponent(
+    'Halo Unitech Garage, saya ingin booking service kendaraan.'
+  )
 
   el.innerHTML = `
-    <section class="relative overflow-hidden bg-surface-dark text-white">
-      <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1800&auto=format&fit=crop" alt="Detail mobil di bengkel" class="h-full w-full object-cover opacity-35" loading="eager" />
-        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,22,45,0.96),rgba(7,22,45,0.82),rgba(7,22,45,0.5))]"></div>
+    <section class="hero-shell" aria-labelledby="hero-title">
+      <div class="hero-section">
+        <div class="hero-backdrop" aria-hidden="true">
+          <img src="${bgImage}" alt="" fetchpriority="high">
+          <div class="hero-backdrop-overlay"></div>
+          <div class="hero-backdrop-vignette"></div>
+        </div>
+
+        <div class="hero-content" data-animate="fade-up">
+          <h1 id="hero-title" class="hero-title">${headline}</h1>
+          <p class="hero-supporting-title">${supportingHeadline}</p>
+          <p class="hero-subtitle">${subheadline}</p>
+
+          <div class="hero-actions">
+            <a
+              href="https://wa.me/${whatsappNumber}?text=${bookingMessage}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero-cta-btn"
+            >
+              <span>${ctaPrimary}</span>
+            </a>
+
+            <a href="#services" class="hero-secondary-btn">
+              ${ctaSecondary}
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div class="container-main relative grid grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14 lg:py-24">
-        <div class="max-w-2xl" data-animate="fade-up">
-          <span class="eyebrow">${eyebrow}</span>
-          <h1 data-animate-hero class="mt-5 text-balanced font-heading text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-[72px]">
-            ${headlineTop.split(' ').map(w => `<span class="chars inline-block">${w}&nbsp;</span>`).join('')}
-          </h1>
-          <p class="mt-5 max-w-2xl text-lg font-bold leading-relaxed text-blue-50 sm:text-xl">${headlineBottom}</p>
-          <p class="mt-4 max-w-2xl text-sm leading-7 text-blue-50/75 sm:text-base">${subheadline}</p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#contact" class="button-primary">${ctaPrimary}</a>
-            <a href="#services" class="inline-flex items-center justify-center rounded-md border border-white/25 bg-white/10 px-5 py-3 text-sm font-bold text-white backdrop-blur transition-all hover:bg-white hover:text-ink-primary">${ctaSecondary}</a>
-          </div>
-        </div>
-
-        <div class="panel-glow rounded-lg border border-white/15 bg-white/10 p-3 backdrop-blur-md sm:p-4 lg:justify-self-end" data-animate="fade-up">
-          <div class="overflow-hidden rounded-md">
-            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1400&auto=format&fit=crop" alt="Teknisi Unitech Garage menangani mobil" class="h-[300px] w-full object-cover sm:h-[420px] lg:h-[500px] lg:w-[620px]" />
-          </div>
-        </div>
+      <div class="hero-vehicle-stage">
+        <img
+          src="${carsImage}"
+          class="hero-car-lineup"
+          alt="Deretan kendaraan yang ditangani Unitech Garage"
+          fetchpriority="high"
+        >
       </div>
     </section>
   `

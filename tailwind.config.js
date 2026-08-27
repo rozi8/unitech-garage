@@ -7,11 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: '#e50914',
+        'primary-hover': '#cc0812',
+        background: '#0a0a0a',
         surface: {
+          DEFAULT: '#ffffff',
           base: '#f8fafc',
           dark: '#07162d',
           card: '#ffffff'
         },
+        'text-secondary': '#a3a3a3',
         ink: {
           primary: '#07162d',
           secondary: '#475569'
@@ -27,9 +32,13 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Barlow', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['"Open Sans"', 'Inter', 'system-ui', 'sans-serif'],
+        heading: ['Montserrat', 'Barlow', 'Inter', 'sans-serif'],
+        script: ['"Great Vibes"', 'cursive'],
         badge: ['"North Djakarta"', 'Barlow', 'sans-serif']
+      },
+      boxShadow: {
+        'car-glow': '0 -10px 40px rgba(0, 0, 0, 0.5)'
       }
     }
   },

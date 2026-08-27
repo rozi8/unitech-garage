@@ -43,6 +43,10 @@
     font-family: Barlow, Inter, system-ui, -apple-system, sans-serif;
   }
 
+  .font-script {
+    font-family: 'Great Vibes', cursive, sans-serif;
+  }
+
   .eyebrow {
     font-family: 'North Djakarta', 'Barlow', cursive, sans-serif;
     @apply inline-flex items-center text-sm sm:text-lg font-normal tracking-wide text-brand-orange;
@@ -52,6 +56,10 @@
     @apply inline-flex items-center justify-center rounded-md bg-brand-orange px-5 py-3 text-sm font-black text-white shadow-lg shadow-orange-500/20 transition-all duration-200;
   }
   .button-primary:hover { @apply -translate-y-0.5 bg-slate-900 text-white shadow-slate-900/30; }
+
+  .btn-red-hero {
+    @apply inline-flex items-center justify-center rounded bg-[#e50914] px-8 py-3.5 text-base sm:text-lg font-black tracking-wider text-white shadow-xl shadow-red-600/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-red-600/50 active:translate-y-0;
+  }
 
   .button-secondary {
     @apply inline-flex items-center justify-center rounded-md border border-line bg-white px-5 py-3 text-sm font-bold text-ink-primary transition-all duration-200;
@@ -114,4 +122,316 @@
 [data-animate="fade-up"].is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Hero */
+.hero-shell {
+  position: relative;
+  isolation: isolate;
+  background: #f8fafc;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 610px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background: #08090b;
+}
+
+.hero-backdrop,
+.hero-backdrop-overlay,
+.hero-backdrop-vignette {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-backdrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 54%;
+  transform: scale(1.025);
+}
+
+.hero-backdrop-overlay {
+  background: linear-gradient(180deg, rgba(3, 4, 6, 0.83) 0%, rgba(3, 4, 6, 0.76) 50%, rgba(3, 4, 6, 0.93) 100%);
+}
+
+.hero-backdrop-vignette {
+  background:
+    radial-gradient(circle at 50% 17%, rgba(229, 9, 20, 0.11), transparent 34%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.35), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.35));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1000px);
+  padding: 50px 20px 170px;
+  text-align: center;
+}
+
+.hero-script {
+  margin: 0 0 -4px;
+  color: #ef1823;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(3.1rem, 11vw, 4.7rem);
+  line-height: 0.9;
+  text-shadow: 0 7px 28px rgba(229, 9, 20, 0.32);
+  transform: rotate(-2deg);
+}
+
+.hero-title {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: Montserrat, Barlow, Inter, sans-serif;
+  font-size: clamp(2.35rem, 7.6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.55);
+}
+
+.hero-supporting-title {
+  margin: 16px auto 0;
+  color: #fff;
+  font-family: Montserrat, Barlow, Inter, sans-serif;
+  font-size: clamp(1rem, 3.4vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero-subtitle {
+  max-width: 720px;
+  margin: 10px auto 0;
+  color: #d5dae2;
+  font-size: clamp(0.84rem, 2.6vw, 1rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.005em;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-cta-btn {
+  position: relative;
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  overflow: hidden;
+  padding: 0 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  background: #f47b20;
+  box-shadow: 0 12px 34px rgba(244, 123, 32, 0.3);
+  color: #fff;
+  font-family: Montserrat, Barlow, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: none;
+  transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.hero-cta-btn::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent 28%, rgba(255, 255, 255, 0.22) 48%, transparent 68%);
+  transform: translateX(-120%);
+  transition: transform 500ms ease;
+}
+
+.hero-cta-btn span,
+.hero-cta-btn i {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-cta-btn:hover {
+  background: #db6815;
+  box-shadow: 0 16px 38px rgba(244, 123, 32, 0.42);
+  transform: translateY(-2px);
+}
+
+.hero-cta-btn:hover::after {
+  left: 0;
+  transform: translateX(120%);
+}
+
+.hero-secondary-btn {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+  color: #fff;
+  font-family: Montserrat, Barlow, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.hero-secondary-btn:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.hero-phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero-phone-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 50%;
+  color: #d9dadd;
+  font-size: 1.15rem;
+  animation: none;
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.hero-phone-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-phone-copy strong {
+  font-family: Montserrat, Barlow, sans-serif;
+  font-size: clamp(1rem, 4.8vw, 1.32rem);
+  line-height: 1.15;
+  letter-spacing: 0.035em;
+}
+
+.hero-phone-copy small {
+  margin-top: 4px;
+  color: #90949a;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+.hero-phone-link:hover .hero-phone-icon {
+  border-color: rgba(229, 9, 20, 0.7);
+  color: #ef1823;
+  transform: rotate(-8deg);
+}
+
+.hero-vehicle-stage {
+  --hero-cars-start-y: -30%;
+  --hero-cars-rest-y: -36%;
+  position: relative;
+  z-index: 3;
+  height: clamp(115px, 28vw, 275px);
+  background: #f8fafc;
+}
+
+.hero-car-lineup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(94vw, 940px);
+  height: auto;
+  max-width: none;
+  opacity: 0;
+  filter: drop-shadow(0 18px 16px rgba(0, 0, 0, 0.26));
+  transform: translate(-50%, var(--hero-cars-start-y)) scale(0.96);
+  animation: heroCarsEnter 900ms cubic-bezier(0.16, 1, 0.3, 1) 180ms forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes heroCarsEnter {
+  to {
+    opacity: 1;
+    transform: translate(-50%, var(--hero-cars-rest-y)) scale(1);
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    min-height: 620px;
+  }
+
+  .hero-vehicle-stage {
+    --hero-cars-start-y: -49%;
+    --hero-cars-rest-y: -55%;
+    height: clamp(115px, calc(28vw - 65px), 210px);
+  }
+
+  .hero-content {
+    padding: 50px 28px 160px;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .hero-cta-btn {
+    min-height: 54px;
+    padding-inline: 30px;
+    font-size: 0.8rem;
+  }
+
+  .hero-secondary-btn {
+    min-height: 54px;
+    padding-inline: 28px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    min-height: 650px;
+  }
+
+  .hero-vehicle-stage {
+    height: 195px;
+  }
+
+  .hero-content {
+    padding: 32px 48px 160px;
+  }
+
+  .hero-title {
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-car-lineup {
+    opacity: 1;
+    transform: translate(-50%, var(--hero-cars-rest-y));
+    animation: none;
+  }
 }

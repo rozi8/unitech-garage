@@ -9,12 +9,16 @@ export const siteContent = {
   ],
 
   hero: {
-    eyebrow: 'Unitech Garage Depok',
-    headlineTop: 'Perawatan mobil yang rapi, jelas, dan bertenaga.',
-    headlineBottom: 'Dikerjakan teknisi yang paham detail.',
+    headline: 'Perawatan mobil yang rapi, jelas, dan bertenaga.',
+    supportingHeadline: 'Dikerjakan teknisi yang paham detail.',
     subheadline: 'Dari servis mesin, kelistrikan, kaki-kaki, AC, sampai detailing ringan. Setiap pekerjaan dimulai dari diagnosis, estimasi transparan, lalu eksekusi yang presisi.',
     ctaPrimary: 'Booking via WhatsApp',
     ctaSecondary: 'Lihat Layanan',
+    phoneNumber: '0812 3456 7890',
+    whatsappNumber: '628000000000',
+    emergencyText: '24-HOUR EMERGENCY ASSISTANCE',
+    bgImage: '/img/hero-bg.png',
+    carsImage: '/img/hero-cars-transparent.png',
     marquee: [
       'DIAGNOSIS JELAS',
       'TEKNISI BERPENGALAMAN',
