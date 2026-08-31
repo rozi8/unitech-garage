@@ -13,7 +13,7 @@ export function renderHeader(el) {
     <header class="fixed left-0 right-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
       <div class="container-main flex h-20 items-center justify-between px-4 sm:px-6">
         <a href="#hero" class="flex min-w-0 items-center gap-3 group" aria-label="Unitech Garage">
-          <img src="/img/logo.jpeg" alt="Unitech Garage" class="h-11 sm:h-12 w-auto object-contain rounded-lg bg-white p-0.5 border border-slate-200/60 shadow-sm shrink-0 group-hover:scale-105 transition-transform" />
+          <img src="/img/logo.png" alt="Unitech Garage" class="h-10 sm:h-12 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105" />
           <div class="min-w-0">
             <div class="text-base sm:text-lg font-heading font-bold tracking-tight text-slate-900 leading-tight">Unitech Garage</div>
             <div class="hidden text-xs font-normal text-slate-500 sm:block">Professional Auto Service</div>

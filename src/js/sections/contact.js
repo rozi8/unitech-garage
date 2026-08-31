@@ -44,7 +44,7 @@ export function renderContact(el) {
             <!-- Right Workshop Image Card Frame -->
             <div class="relative w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/10] rounded-[20px] sm:rounded-[24px] overflow-hidden shadow-md border-2 sm:border-4 border-white bg-slate-900 group">
               <img 
-                src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=1000&auto=format&fit=crop" 
+                src="/img/Workshop.webp" 
                 alt="Unitech Garage Workshop Tools" 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"

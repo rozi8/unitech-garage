@@ -32,7 +32,7 @@ export const siteContent = {
     titleTop: 'Profesional saat mendiagnosis.',
     titleBottom: 'Antusias saat mengeksekusi.',
     body: 'Unitech Garage dibangun untuk pemilik mobil yang ingin proses servis terasa tenang: keluhan didengar, temuan dijelaskan, dan pengerjaan dilakukan dengan standar yang konsisten.',
-    image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1000&auto=format&fit=crop',
+    image: '/img/Karakter_Bengkel.webp',
     rating: '99% Pelanggan Puas',
     ratingDetail: '4.9 ★★★★★ (120+ Review)',
     features: [
@@ -62,17 +62,17 @@ export const siteContent = {
       {
         title: 'Servis Mesin',
         desc: 'Diagnosis performa, tune-up, pengecekan kebocoran, dan perawatan komponen utama.',
-        image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Service_Mesin.webp'
       },
       {
         title: 'Kelistrikan',
         desc: 'Pemeriksaan aki, lampu, sensor, wiring, dan gangguan arus yang sulit dilacak.',
-        image: 'https://images.unsplash.com/photo-1600661653561-629509216228?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Kelistrikan.webp'
       },
       {
         title: 'Kaki-Kaki & Suspensi',
         desc: 'Pengecekan bunyi, pengereman, shockbreaker, bushing, dan stabilitas kendaraan.',
-        image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Suspensi.webp'
       },
       {
         title: 'Servis Berkala',
@@ -82,7 +82,7 @@ export const siteContent = {
       {
         title: 'AC Mobil',
         desc: 'Pengecekan tekanan, kebocoran, evaporator, blower, dan performa pendinginan kabin.',
-        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Service_ac.webp'
       },
       {
         title: 'Detailing Ringan',
@@ -125,22 +125,22 @@ export const siteContent = {
       {
         title: 'Diagnosis Terarah',
         desc: 'Keluhan dipetakan lebih dulu agar pengerjaan tidak menebak-nebak.',
-        image: 'https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Diagnosis.webp'
       },
       {
         title: 'Estimasi Transparan',
         desc: 'Biaya dan prioritas perbaikan dijelaskan sebelum pekerjaan dimulai.',
-        image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Estimasi.webp'
       },
       {
         title: 'Eksekusi Rapi',
         desc: 'Hasil kerja dicek ulang supaya mobil keluar bengkel dalam kondisi siap pakai.',
-        image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Karakter_Bengkel.webp'
       },
       {
         title: 'Respons Cepat',
         desc: 'Booking, konsultasi, dan update pekerjaan bisa dilakukan lewat WhatsApp.',
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Respons.webp'
       }
     ]
   },

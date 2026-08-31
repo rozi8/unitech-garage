@@ -54,7 +54,7 @@ export function renderAbout(el) {
               <img 
                 src="${image}" 
                 alt="Karakter Bengkel Unitech Garage" 
-                class="w-full h-[380px] sm:h-[480px] lg:h-[520px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                class="w-full h-[450px] sm:h-[560px] lg:h-[620px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
                 loading="lazy" 
               />
               
