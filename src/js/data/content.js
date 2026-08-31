@@ -158,8 +158,9 @@ export const siteContent = {
   location: {
     eyebrow: 'Lokasi',
     title: 'Datang langsung atau booking dulu lewat WhatsApp',
-    address: 'Unitech Garage, Depok, Jawa Barat',
-    mapsEmbedUrl: 'https://maps.google.com/maps?q=Depok%2C%20Jawa%20Barat&t=&z=14&ie=UTF8&iwloc=&output=embed',
+    address: 'Alamat asli Unitech Garage',
+    mapsUrl: 'https://maps.app.goo.gl/XhV2AYPry2x5WgcBA',
+    mapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278.11230986677054!2d106.83593547174839!3d-6.451476682689831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebfb88bb0827%3A0xc1324fab37c20e58!2sUnitech%20Garage!5e1!3m2!1sid!2sid!4v1788149566193!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
     cards: [
       {
         title: 'Konsultasi dulu',
@@ -176,7 +177,7 @@ export const siteContent = {
     eyebrow: 'Kontak',
     title: 'Ceritakan keluhan mobil Anda, kami bantu cek langkah berikutnya.',
     subtitle: 'Kirim pesan WhatsApp untuk konsultasi awal, estimasi, atau jadwal kunjungan ke bengkel.',
-    whatsappNumber: '628000000000',
+    whatsappNumber: '+62895322312590',
     whatsappMessage: 'Halo Unitech Garage, saya ingin konsultasi dan booking servis kendaraan.'
   },
 
