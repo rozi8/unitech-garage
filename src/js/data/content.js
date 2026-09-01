@@ -62,32 +62,32 @@ export const siteContent = {
       {
         title: 'Servis Mesin',
         desc: 'Diagnosis performa, tune-up, pengecekan kebocoran, dan perawatan komponen utama.',
-        image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=900&auto=format&fit=crop'
+        image: '/public/img/servic mesin.webp'
       },
       {
         title: 'Kelistrikan',
         desc: 'Pemeriksaan aki, lampu, sensor, wiring, dan gangguan arus yang sulit dilacak.',
-        image: 'https://images.unsplash.com/photo-1600661653561-629509216228?q=80&w=900&auto=format&fit=crop'
+        image: '/public/img/elektrkal.jpeg'
       },
       {
         title: 'Kaki-Kaki & Suspensi',
         desc: 'Pengecekan bunyi, pengereman, shockbreaker, bushing, dan stabilitas kendaraan.',
-        image: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=900&auto=format&fit=crop'
+        image: '/public/img/kaki-kaki 2.jpg'
       },
       {
         title: 'Servis Berkala',
         desc: 'Perawatan rutin untuk oli, filter, fluida, rem, ban, dan komponen fast moving.',
-        image: 'https://images.unsplash.com/photo-1632823471565-1ecdf5c092bf?q=80&w=900&auto=format&fit=crop'
+        image: '/public/img/servic mesin 2.webp'
       },
       {
         title: 'AC Mobil',
         desc: 'Pengecekan tekanan, kebocoran, evaporator, blower, dan performa pendinginan kabin.',
-        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=900&auto=format&fit=crop'
+        image: '/public/img/ac.jpg'
       },
       {
         title: 'Detailing Ringan',
         desc: 'Perawatan tampilan agar eksterior dan interior kembali segar setelah pemakaian harian.',
-        image: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=900&auto=format&fit=crop'
+        image: '/public/img/holden.webp'
       }
     ]
   },
@@ -100,14 +100,14 @@ export const siteContent = {
       {
         title: 'Restorasi Tampilan Eksterior',
         desc: 'Pembersihan, koreksi ringan, dan finishing agar panel terlihat lebih segar.',
-        before: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=1200&auto=format&fit=crop',
-        after: 'https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?q=80&w=1200&auto=format&fit=crop'
+        before: '/public/img/ringsek 3.webp',
+        after: '/public/img/ft86 after.jpg'
       },
       {
         title: 'Perapihan Area Mesin',
         desc: 'Inspeksi dan perawatan visual area mesin agar mudah dicek kembali.',
-        before: 'https://images.unsplash.com/photo-1600661653561-629509216228?q=80&w=1200&auto=format&fit=crop',
-        after: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1200&auto=format&fit=crop'
+        before: '/public/img/cat.jpg',
+        after: '/public/img/holden.webp'
       },
       {
         title: 'Penyegaran Interior',
