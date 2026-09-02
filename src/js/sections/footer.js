@@ -12,7 +12,7 @@ export function renderFooter(el) {
       <div class="container-main grid grid-cols-1 gap-10 sm:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
           <div class="flex items-center gap-3">
-            <img src="/img/logo.jpeg" alt="Unitech Garage" class="h-11 sm:h-12 w-auto object-contain rounded-lg bg-white p-0.5 shadow-sm shrink-0" />
+            <img src="/img/logo.png" alt="Unitech Garage" class="h-11 sm:h-12 w-auto object-contain rounded-xl bg-white p-1.5 shadow-sm shrink-0" />
             <div>
               <div class="text-lg font-heading font-bold tracking-tight text-white">Unitech Garage</div>
               <div class="text-xs font-normal text-slate-400">Professional Auto Service</div>

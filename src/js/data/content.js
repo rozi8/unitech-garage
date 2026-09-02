@@ -11,11 +11,11 @@ export const siteContent = {
   hero: {
     headline: 'Bengkel Generasi Baru untuk Semua Generasi Mobil.',
     supportingHeadline: 'Diagnosis akurat, pengerjaan presisi, harga transparan.',
-    subheadline: 'Mau rawat mobil klasik kesayangan, peremajaan matic harian, atau optimasi sistem electric vehicle & hybrid? Kami tangani dari kelistrikan, kaki-kaki, hingga AC dengan transparansi penuh dari awal sampai serah terima kunci..',
+    subheadline: 'Mau rawat mobil klasik kesayangan, peremajaan matic harian, atau optimasi sistem electric vehicle & hybrid? Kami tangani dari kelistrikan, kaki-kaki, hingga AC dengan transparansi penuh dari awal sampai serah terima kunci.',
     ctaPrimary: 'Booking via WhatsApp',
     ctaSecondary: 'Lihat Layanan',
     phoneNumber: '0812 3456 7890',
-    whatsappNumber: '628000000000',
+    whatsappNumber: '62895322312590',
     emergencyText: '24-HOUR EMERGENCY ASSISTANCE',
     bgImage: '/img/hero-bg.png',
     carsImage: '/img/hero-cars-transparent.png',
@@ -32,9 +32,9 @@ export const siteContent = {
     titleTop: 'Profesional saat mendiagnosis.',
     titleBottom: 'Antusias saat mengeksekusi.',
     body: 'Unitech Garage dibangun untuk pemilik mobil yang ingin proses servis terasa tenang: keluhan didengar, temuan dijelaskan, dan pengerjaan dilakukan dengan standar yang konsisten.',
-    image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=1000&auto=format&fit=crop',
+    image: '/img/Karakter_Bengkel.webp',
     rating: '99% Pelanggan Puas',
-    ratingDetail: '4.9 ★★★★★ (120+ Review)',
+    ratingDetail: '4.6 ★★★★★',
     features: [
       {
         title: 'Teknisi Berpengalaman',
@@ -62,7 +62,7 @@ export const siteContent = {
       {
         title: 'Servis Mesin',
         desc: 'Diagnosis performa, tune-up, pengecekan kebocoran, dan perawatan komponen utama.',
-        image: '/public/img/servic mesin.webp'
+        image: '/public/img/mesin.jpg'
       },
       {
         title: 'Kelistrikan',
@@ -87,7 +87,7 @@ export const siteContent = {
       {
         title: 'Detailing Ringan',
         desc: 'Perawatan tampilan agar eksterior dan interior kembali segar setelah pemakaian harian.',
-        image: '/public/img/holden.webp'
+        image: '/public/img/Workshop.webp'
       }
     ]
   },
@@ -98,22 +98,22 @@ export const siteContent = {
     subtitle: 'Geser slider pada tiap card untuk melihat perubahan kondisi sebelum dan sesudah layanan.',
     items: [
       {
-        title: 'Restorasi Tampilan Eksterior',
-        desc: 'Pembersihan, koreksi ringan, dan finishing agar panel terlihat lebih segar.',
+        title: 'Restorasi & Perbaikan Eksterior',
+        desc: 'Penanganan bodi dan eksterior kendaraan, mulai dari perbaikan bagian yang rusak hingga proses finishing untuk mengembalikan tampilan mobil agar lebih rapi dan menarik.',
         before: '/public/img/ringsek 3.webp',
         after: '/public/img/ft86 after.jpg'
       },
       {
-        title: 'Perapihan Area Mesin',
-        desc: 'Inspeksi dan perawatan visual area mesin agar mudah dicek kembali.',
+        title: 'Restorasi & Repaint Bodi',
+        desc: 'Proses restorasi bodi kendaraan melalui tahap persiapan permukaan, perbaikan panel, dan pengecatan untuk menghasilkan tampilan yang lebih rapi dan siap ke tahap finishing.',
         before: '/public/img/cat.jpg',
-        after: '/public/img/holden.webp'
+        after: '/public/img/Workshop.webp'
       },
       {
         title: 'Penyegaran Interior',
         desc: 'Membersihkan detail kabin dan area yang sering disentuh pengguna.',
-        before: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop',
-        after: 'https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?q=80&w=1200&auto=format&fit=crop'
+        before: '/public/img/expander.jpeg',
+        after: '/public/img/after expander.jpg'
       }
     ]
   },
@@ -125,22 +125,22 @@ export const siteContent = {
       {
         title: 'Diagnosis Terarah',
         desc: 'Keluhan dipetakan lebih dulu agar pengerjaan tidak menebak-nebak.',
-        image: 'https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Diagnosis.webp'
       },
       {
         title: 'Estimasi Transparan',
         desc: 'Biaya dan prioritas perbaikan dijelaskan sebelum pekerjaan dimulai.',
-        image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Estimasi.webp'
       },
       {
         title: 'Eksekusi Rapi',
         desc: 'Hasil kerja dicek ulang supaya mobil keluar bengkel dalam kondisi siap pakai.',
-        image: 'https://images.unsplash.com/photo-1625047509168-a7026f36de04?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Karakter_Bengkel.webp'
       },
       {
         title: 'Respons Cepat',
         desc: 'Booking, konsultasi, dan update pekerjaan bisa dilakukan lewat WhatsApp.',
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=900&auto=format&fit=crop'
+        image: '/img/Response.webp'
       }
     ]
   },
@@ -177,13 +177,22 @@ export const siteContent = {
     eyebrow: 'Kontak',
     title: 'Ceritakan keluhan mobil Anda, kami bantu cek langkah berikutnya.',
     subtitle: 'Kirim pesan WhatsApp untuk konsultasi awal, estimasi, atau jadwal kunjungan ke bengkel.',
-    whatsappNumber: '+62895322312590',
+    whatsappNumber: '6283171119994',
     whatsappMessage: 'Halo Unitech Garage, saya ingin konsultasi dan booking servis kendaraan.'
   },
 
   footer: {
-    tagline: 'Bengkel mobil profesional untuk perawatan menyeluruh kendaraan Anda.',
-    address: 'Depok, Jawa Barat',
-    whatsappDisplay: '+62 800-0000-000'
-  }
+  tagline: 'Bengkel mobil profesional untuk perawatan menyeluruh kendaraan Anda.',
+  address: 'Depok, Jawa Barat',
+  whatsappDisplay: [
+    '+62 8953-2231-2590',
+    '+62 831-7111-9994'
+  ],
+},
+
+media: {
+  instagram: 'https://www.instagram.com/unitechgarage/',
+  // facebook: 'https://www.facebook.com/unitechgarage',
+  // youtube: 'https://www.youtube.com/@unitechgarage'
+}
 }
